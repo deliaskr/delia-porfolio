@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=code" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Porfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">My <span>Portfolio</span></a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education Background</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <i class="fa-solid fa-bars" id="menu-icon" aria-expanded="false"></i>
+    </header>
+
+   <section class="home" id="home" data-aos="fade-up" data-aos-duration="1000">
+
+    <div class="home-content">
+        <h1>Hi, I'ts <span>Delia</span></h1>
+        <h3 class="text-animation" data-aos="fade-right" data-aos-duration="1500">
+            I'm a <span></span>
+        </h3>
+        <p data-aos-duration="1300">This Portfolio is a reflection of my journey and work.</p>
+
+        <div class="social-icons" data-aos="fade-up" data-aos-duration="1200">
+            <a href="https://g.co/kgs/QDpVXDM"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/adell.czy/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/?lang=id"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+   </section>
+
+   <section class="about-ticket">
+        <div class="ticket" data-aos="flip-up" data-aos-duration="1200">
+            <div class="ticket-header">
+                <h2 class="ticket-title">About Me</h2>
+            </div>
+            <div class="ticket-body">
+                <div class="profile-photo-container">
+                    <img src="image/me.jpeg" alt="Foto Saya" class="profile-photo">
+                </div>
+                <div class="ticket-info">
+                    <h3>Delia Sekar Arum</h3>
+                    <p id="bio">Halo! Saya seorang pelajar kelas XI jurusan Rekayasa Perangkat Lunak (RPL). Saat ini, saya tengah mendalami dunia pemrograman dan pengembangan perangkat lunak, terutama di bidang HTML dan CSS.</p>
+                    <button class="bio-btn" onclick="revealMore()">Baca Lebih Banyak</button>
+                </div>
+            </div>
+            <div class="ticket-footer">
+                <div class="ticket-serial">#04122007</div>
+                <img src="image/tanda.png" alt="Tanda Tangan" class="ticket-signature">
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container-sc" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="section-heading" data-aos="fade-up" data-aos-duration="1200" data-outline="education">Education Background</h2>
+            <div class="all-items">
+                <div class="item" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="kiri">
+                        <div class="img">
+                            <img src="image/sd.jpg">
+                        </div>
+                    </div>
+                    <div class="kanan">
+                        <h2 class="education-title">Elementary School</h2>
+                        <h3 class="education-sub-title">SDN 5 PATARUMAN</h3>
+                        <p class="education-desc">JL. Pelita, No. 7, Pataruman, Hegarsari, Kec. Pataruman, Kota Banjar, Jawa Barat.</p>
+                    </div>
+                </div>
+
+                <div class="item" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="kiri">
+                        <div class="img">
+                            <img src="image/smp.jpg">
+                        </div>
+                    </div>
+                    <div class="kanan">
+                        <h2 class="education-title">Junior High School</h2>
+                        <h3 class="education-sub-title">SMPN 2 BANJAR</h3>
+                        <p class="education-desc">JL. Bkr, NO. 16, Hegarsari, Kec. Pataruman, Kota Banjar, Jawa Barat.</p>
+                    </div>
+                </div>
+
+                <div class="item" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="kiri">
+                        <div class="img">
+                            <img src="image/smk.jpg">
+                        </div>
+                    </div>
+                    <div class="kanan">
+                        <h2 class="education-title">Vocational School</h2>
+                        <h3 class="education-sub-title">SMKN 1 BANJAR</h3>
+                        <p class="education-desc">JL. KH. Mustofa Link. Parunglesang, RT.05/RW.10, Banjar, Kota Banjar, Jawa Barat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <section class="skills-section" id="skills">
+    <h2 class="section-title" data-aos="fade-up" data-aos-duration="1200">Skills</h2>
+    
+    <div class="skills__container container grid section__border">
+        <div class="skills__content">
+            <h3 class="skills__title">
+                <i class="ri-braces-line"></i> Frontend Developer
+            </h3>
+            <div class="skills__info">
+                <div class="skills__data" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">
+                    <div class="skills__blob">
+                        <img src="image/html.png" alt="HTML Icon">
+                    </div>
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__subtitle">Advanced</span>
+                </div>
+
+                <div class="skills__data" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
+                    <div class="skills__blob">
+                        <img src="image/css.png" alt="CSS Icon">
+                    </div>
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__subtitle">Intermediate</span>
+                </div>
+
+                <div class="skills__data" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                    <div class="skills__blob">
+                        <img src="image/js.jpg" alt="JavaScript Icon">
+                    </div>
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__subtitle">Beginner</span>
+                </div>
+
+                <div class="skills__data" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">
+                    <div class="skills__blob">
+                        <img src="image/python.png" alt="JavaScript Icon">
+                    </div>
+                    <h3 class="skills__name">Python</h3>
+                    <span class="skills__subtitle">Beginner</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Garis vertikal di sini -->
+        <div class="vertical-divider"></div>
+
+        <div class="skills__content">
+            <h3 class="skills__title">
+                <i class="ri-pantone-line"></i> Web Designer
+            </h3>
+            <div class="skills__info">
+                <div class="skills__data" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="600">
+                    <div class="skills__blob">
+                        <img src="image/figma.png" alt="Figma Icon">
+                    </div>
+                    <h3 class="skills__name">Figma</h3>
+                    <span class="skills__subtitle">Intermediate</span>
+                </div>
+
+                <div class="skills__data" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
+                    <div class="skills__blob">
+                        <img src="image/canva.png" alt="Canva Icon">
+                    </div>
+                    <h3 class="skills__name">Canva</h3>
+                    <span class="skills__subtitle">Intermediate</span>
+                </div>
+
+                <div class="skills__data" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                    <div class="skills__blob">
+                        <img src="image/balsamiq.png" alt="Balsamiq Icon">
+                    </div>
+                    <h3 class="skills__name">Balsamiq</h3>
+                    <span class="skills__subtitle">Beginner-Intermediate</span>
+                </div>
+
+                <div class="skills__data" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="600">
+                    <div class="skills__blob">
+                        <img src="image/blender.png" alt="Balsamiq Icon">
+                    </div>
+                    <h3 class="skills__name">Blender</h3>
+                    <span class="skills__subtitle">Beginner</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container swiper">
+     <h2 class="heading">Projects</h2>
+         <div class="card-wrapper">
+             <ul class="card-list swiper-wrapper">
+                 <li class="card-item swiper-slide">
+                     <a href="https://course-lesson.netlify.app/" class="card-link">
+                         <img src="image/project1.png" class="card-image">
+                         <p class="badge designer">Web Developer</p>
+                         <h2 class="card-title">Membuat landing page dengan "Hello World" dan lesson HTML, CSS, PHP, Ruby, dan Swift.</h2>
+                         <button class="card-button material-symbols-outlined">code</button>
+                     </a>
+                 </li>
+                 <li class="card-item swiper-slide">
+                     <a href="https://progate-zulzul.netlify.app/" class="card-link">
+                         <img src="image/project2.png" class="card-image">
+                         <p class="badge developer">Web Developer</p>
+                         <h2 class="card-title"> Mengikuti kursus di Progate untuk memahami konsep dasar pemrograman dan meningkatkan keterampilan coding.</h2>
+                         <button class="card-button material-symbols-outlined">code</button>
+                     </a>
+                 </li>
+                 <li class="card-item swiper-slide">
+                     <a href="https://deliaskr.github.io/Delia-project3/" class="card-link">
+                         <img src="image/project3.png" class="card-image">
+                         <p class="badge marketer">Language Learner</p>
+                         <h2 class="card-title">Membuat website sederhana untuk kursus bahasa Jerman, menampilkan konten yang informatif dan menarik bagi pengguna.</h2>
+                         <button class="card-button material-symbols-outlined">code</button>
+                     </a>
+                 </li>
+                 <li class="card-item swiper-slide">
+                     <a href="#" class="card-link">
+                         <img src="image/porfolio.png" class="card-image">
+                         <p class="badge gamer">Porfolio</p>
+                         <h2 class="card-title">Menampilkan project-project yang saya buat saat belajar coding. mencerminkan kemajuan dan dedikasi saya.</h2>
+                         <button class="card-button material-symbols-outlined">code</button>
+                     </a>
+                 </li>
+                 <li class="card-item swiper-slide">
+                     <a href="https://www.canva.com/design/DAGU-ZLtoh0/sSFFLic5h_CBLvhc8AwQ6w/edit?utm_content=DAGU-ZLtoh0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card-link">
+                         <img src="image/cv.png" class="card-image">
+                         <p class="badge editor">CV</p>
+                         <h2 class="card-title">CV (Curriculum Vitae) adalah dokumen yang merangkum riwayat hidup dan digunakan untuk melamar pekerjaan.</h2>
+                         <button class="card-button material-symbols-outlined">code</button>
+                     </a>
+                 </li>
+             </ul>
+ 
+             <div class="swiper-pagination"></div>
+             <div class="swiper-slide-button swiper-button-prev"></div>
+             <div class="swiper-slide-button swiper-button-next"></div>
+         </div>
+     </div>
+ </section>
+
+<section class="kontak" id="contact">
+      <div class="contact">
+        <div class="left">
+          <h2 class="heading">Get In Touch</h2>
+          <p class="text">We are here for you! How can we help?</p>
+          <form action="#" class="form">
+            <div class="inputBox">
+              <input
+                type="text"
+                name="name"
+                class="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="inputBox">
+              <input
+                type="text"
+                name="email"
+                class="email"
+                placeholder="Enter your email address"
+              />
+            </div>
+            <div class="inputBox">
+              <textarea
+                name="message"
+                class="message"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+            <button class="tombol">Submit</button>
+          </form>
+        </div>
+        <div class="right">
+          <div class="ilustration">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.65479452989!2d108.46317350503571!3d-7.369539956022642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6597c29fb0a5a5%3A0x403f7f2e6ec3070!2sBanjar%2C%20Kota%20Banjar%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1697626895028!5m2!1sid!2sid"
+              width="600" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="contact-info">
+            <div class="infoBox">
+              <div class="icon">
+                <ion-icon name="location"></ion-icon>
+              </div>
+              <div class="text">
+                <p>Kota Banjar, Jawa Barat.</p>
+              </div>
+            </div>
+            <div class="infoBox">
+              <div class="icon">
+                <ion-icon name="call"></ion-icon>
+              </div>
+              <div class="text">
+                <a href="#">+62896-5848-5425</a>
+              </div>
+            </div>
+            <div class="infoBox">
+              <div class="icon">
+                <ion-icon name="mail"></ion-icon>
+              </div>
+              <div class="text">
+                <a href="#">delia@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+   <footer class="footer">
+    <div class="social">
+        <a href="https://g.co/kgs/QDpVXDM"><i class="fa-regular fa-envelope"></i></a>
+        <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/adell.czy/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/?lang=id"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+
+   </footer>
+    <script>
+        let isExpanded = false;
+
+function revealMore() {
+    const bio = document.getElementById('bio');
+    const button = document.querySelector('.bio-btn');
+
+    if (!isExpanded) {
+        bio.innerHTML = "Sebagai siswa yang ingin terus berkembang di bidang teknologi, saya bersemangat mengeksplorasi proyek dan belajar keterampilan baru. Dunia teknologi menawarkan banyak peluang, dan saya ingin mempersiapkan diri untuk berkarir di industri ini. Terima kasih telah mengunjungi portfolio saya!";
+        button.innerHTML = "Tampilkan Lebih Sedikit";
+    } else {
+        bio.innerHTML = "Halo! Saya seorang pelajar kelas XI jurusan Rekayasa Perangkat Lunak (RPL). Saat ini, saya tengah mendalami dunia pemrograman dan pengembangan perangkat lunak, terutama di bidang HTML dan CSS.";
+        button.innerHTML = "Baca Lebih Banyak";
+    }
+    
+    isExpanded = !isExpanded; // Toggle between expanded and collapsed states
+}
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+        AOS.init();
+      </script>
+
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+    <script src="script-contact.js"></script>
+</body>
+</html>
